@@ -30,3 +30,6 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Laufzeit-Zustand (SQLite-DB, Lockdown-Flag) – entsteht erst im konkreten Source-Repo
+state/
