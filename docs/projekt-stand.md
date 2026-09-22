@@ -5,25 +5,23 @@
 - [x] Ordnerstruktur angelegt
 
 ### Backend
-- [ ] `config/source.yaml` – Schema definiert (Buttons, Scheduler-Regeln, Sperrfenster, Ziele)
-- [ ] `config/prompt.md` – Platzhalter-Prompt
-- [ ] `config/context.md` – Platzhalter-Kontext
+- [x] `src/main.md` – Anleitung/Beispiel für eigenes `main.go`
+- [x] `config/source.md` – Schema-Konvention beschrieben
+- [x] `config/prompt.md` – Platzhalter
+- [x] `config/context.md` – Platzhalter
+- [x] `src/features/versionsmanagement|security|console` – als Bereiche angelegt (README je Ordner)
 
 ### Features
-#### feat: [Skripte]
-- [ ] `src/scripts/backup.sh` – Platzhalter mit Parametern
-- [ ] `src/scripts/restore.sh` – Platzhalter mit Parametern
-- [ ] `src/scripts/update.sh` – Platzhalter mit Parametern
-- [ ] `src/scripts/check-version.sh` – Platzhalter mit Parametern
+- entfällt – Template selbst hat keine Features, nur Struktur/Doku
 
 ### Fix
 - [ ]
 
 ### Install
-- [ ] `.env.example` mit allen vom Core erwarteten Variablen befüllt
+- [x] `.env.example` mit den von Core erwarteten Variablen befüllt
 
 ### Test / Review
-- [ ] Testweise Instanziierung als `bot-source-ha-compose` erfolgreich geladen
+- [ ] Testweise Instanziierung als `bot-source-ha-compose`, Core via `go get @latest` eingebunden
 
 ### Deployment
-- [ ] entfällt (Template selbst wird nicht deployt)
+- entfällt (Template selbst wird nicht deployt)

@@ -1,23 +1,36 @@
 # Projekt-Plan – bot-source-template
 
 ## Kurzbeschreibung
-Privates GitHub-Template für Sources von `bot-core`. Definiert die einheitliche Ordnerstruktur
-und Platzhalter, aus denen pro Anwendung ein eigenes privates Repo erzeugt wird.
+Privates GitHub-Template für Sources von `bot-core`. Enthält ausschließlich Platzhalter/Doku
+(.md-Dateien) und Ordnerstruktur – kein lauffähiger Code. Aus dem Template wird pro Anwendung
+ein eigenes privates Repo erzeugt, das `bot-core` als Go-Dependency einbindet und sein eigenes
+`main.go` + Feature-Paket schreibt.
 
 ## Ziele & Anforderungen
-- Gleiche Struktur für jede Source, damit der Core sie ohne Anpassung laden kann
-- Kein eigener Code, nur Config (YAML/Markdown) und Bash-Skripte
+- Gleiche Grundstruktur für jede Source, damit neue Anwendungen schnell starten können
+- Kein eigener Code im Template selbst – nur Doku, die beschreibt was reinkommt
+- Klare Trennung möglicher Feature-Bereiche (versionsmanagement, security, console)
 - Secrets ausschließlich lokal in `.env` auf dem Server, nie im Repo
 
 ## Tech-Stack
-Kein eigener Techstack – Bash-Skripte und YAML/Markdown-Config, ausgeführt vom `bot-core`-Binary.
+Kein eigener Techstack im Template. Konkrete Source-Repos: Go, importieren `bot-core` als
+Dependency (`go get github.com/AgentGG00/bot-core@latest`).
 
 ## Grobe Projektstruktur
 bot-source-template/
-├── src/scripts/
+├── src/
+│ ├── main.md
+│ └── features/
+│ ├── versionsmanagement/README.md
+│ ├── security/README.md
+│ └── console/README.md
 ├── config/
+│ ├── source.md
+│ ├── prompt.md
+│ └── context.md
 ├── docs/
-├── .env.example .gitignore README.md LICENSE projekt-plan.md projekt-stand.md
+├── go.mod
+├── .env.example .gitignore README.md LICENSE
 
 ## Rahmenbedingungen
 - Repo: privat, GitHub-Template, MIT-Lizenz (nur falls später doch veröffentlicht)
@@ -30,6 +43,3 @@ Nur als Platzhalter in `.env.example`, echte Werte nie im Repo:
 TELEGRAM_BOT_TOKEN=xxxxxxx
 TELEGRAM_CHAT_ID=xxxxxxx
 TOTP_SECRET=xxxxxxx
-OLLAMA_HOST=xxxxxxx
-HA_LONG_LIVED_TOKEN=xxxxxxx
-
