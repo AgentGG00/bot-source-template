@@ -1,22 +1,22 @@
 # Projekt-Plan – bot-source-template
 
 ## Kurzbeschreibung
-Privates GitHub-Template für Sources von `bot-core`. Enthält ausschließlich Platzhalter/Doku
-(.md-Dateien) und Ordnerstruktur – kein lauffähiger Code. Aus dem Template wird pro Anwendung
-ein eigenes privates Repo erzeugt, das `bot-core` als Go-Dependency einbindet und sein eigenes
-`main.go` + Feature-Paket schreibt.
+Dies ist kein fertiges Repo, sondern der **Entwurf einer Vorlage**: die Grundstruktur, die jede
+zukünftige `bot-core`-Source haben soll. Aus diesem Entwurf wird pro Anwendung ein eigenes
+privates Repo erzeugt, das dann `main.go`, `config/source.yaml` etc. mit echtem Inhalt füllt –
+das Template selbst bleibt Platzhalter/Doku.
 
 ## Ziele & Anforderungen
-- Gleiche Grundstruktur für jede Source, damit neue Anwendungen schnell starten können
-- Kein eigener Code im Template selbst – nur Doku, die beschreibt was reinkommt
-- Klare Trennung möglicher Feature-Bereiche (versionsmanagement, security, console)
-- Secrets ausschließlich lokal in `.env` auf dem Server, nie im Repo
+- Entwurf für eine gleiche Grundstruktur, an der sich jede neue Source orientiert
+- Kein eigener Code im Entwurf – nur Doku, die beschreibt was in der jeweiligen Source reinkommt
+- Klare Trennung möglicher Feature-Bereiche als Entwurf vorgeben (versionsmanagement, security, console)
+- Secrets-Konvention als Entwurf festlegen: ausschließlich lokal in `.env`, nie im Repo
 
 ## Tech-Stack
-Kein eigener Techstack im Template. Konkrete Source-Repos: Go, importieren `bot-core` als
-Dependency (`go get github.com/AgentGG00/bot-core@latest`).
+Kein eigener Techstack im Entwurf selbst. Konkrete Source-Repos, die daraus entstehen: Go,
+importieren `bot-core` als Dependency (`go get github.com/AgentGG00/bot-core@latest`).
 
-## Grobe Projektstruktur
+## Grobe Projektstruktur (Entwurf)
 bot-source-template/
 ├── src/
 │ ├── main.md

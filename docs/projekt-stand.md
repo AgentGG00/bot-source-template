@@ -1,27 +1,30 @@
 ## Checklist
 
+Hinweis: Dies ist der Entwurfsstand einer Vorlage, kein fertiges Projekt. „Erledigt" bedeutet
+hier: der Entwurf für diesen Teil der Struktur steht, nicht dass echter Code existiert.
+
 ### Init
-- [x] Repo angelegt (privat, MIT, als GitHub-Template markiert)
-- [x] Ordnerstruktur angelegt
+- [x] Entwurf als privates GitHub-Template markiert (MIT)
+- [x] Entwurfs-Ordnerstruktur angelegt
 
 ### Backend
-- [x] `src/main.md` – Anleitung/Beispiel für eigenes `main.go`
-- [x] `config/source.md` – Schema-Konvention beschrieben
-- [x] `config/prompt.md` – Platzhalter
-- [x] `config/context.md` – Platzhalter
-- [x] `src/features/versionsmanagement|security|console` – als Bereiche angelegt (README je Ordner)
+- [x] `src/main.md` – Entwurf/Anleitung für das spätere echte `main.go`
+- [x] `config/source.md` – Entwurf der Schema-Konvention
+- [x] `config/prompt.md` – Entwurf-Platzhalter
+- [x] `config/context.md` – Entwurf-Platzhalter
+- [x] `src/features/versionsmanagement|security|console` – Bereiche im Entwurf vorgesehen (README je Ordner)
 
 ### Features
-- entfällt – Template selbst hat keine Features, nur Struktur/Doku
+- entfällt – der Entwurf selbst hat keine Features, nur Struktur/Doku
 
 ### Fix
 - [ ]
 
 ### Install
-- [x] `.env.example` mit den von Core erwarteten Variablen befüllt
+- [x] `.env.example` als Entwurf mit den von Core erwarteten Variablen befüllt
 
 ### Test / Review
-- [ ] Testweise Instanziierung als `bot-source-ha-compose`, Core via `go get @latest` eingebunden
+- [ ] Entwurf noch nicht an einer echten Source (`bot-source-ha-compose`) erprobt
 
 ### Deployment
-- entfällt (Template selbst wird nicht deployt)
+- entfällt (der Entwurf selbst wird nicht deployt)
